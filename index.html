@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Survey Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Employee Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill the form</p>
+    </header>
+    <form action="mailto:aashishdhiman88@gmail.com" id="survey-form" enctype="text/plain" method="post">
+        <label for="name" id="name-label">Name <input type="text" id="name" required placeholder="Enter your name" />
+            <label for="email" id="email-label">Email <input type="email" id="email" required
+                    placeholder="Enter your email" />
+                <label for="number" id="number-label">Age(optional) <input type="number" id="number" min="18" max="80"
+                        placeholder="Enter your age" />
+                    <label for="dropdown">Which option best describes your current role?
+                        <select id="dropdown">
+                            <option>Choose your Role</option>
+                            <option>SDE-1</option>
+                            <option>SDE-2</option>
+                            <option>SDE-3</option>
+                            <option>Fresher</option>
+                        </select></label>
+                    <label for="favourite">What is your favourite thing about the company?
+                        <select id="favourite">
+                            <option>Select an option</option>
+                            <option>Challenges</option>
+                            <option>Projects</option>
+                            <option>Open Source</option>
+                            <option>Community</option>
+                        </select></label>
+                    <fieldset>Would you recommend this company to other?
+                        <label><input type="radio" name="recommendation" value="recommend"> Definitely</label>
+                        <label><input type="radio" name="recommendation" value="recommend"> May be</label>
+                        <label><input type="radio" name="recommendation" value="recommend"> No</label>
+                    </fieldset>
+                    <fieldset>What would you like to see improved?(check multiple options) <label><input type="checkbox"
+                                value="improve"> Front-end Projects</label>
+                        <label><input type="checkbox" value="improve"> Back-end Projects</label>
+                        <label><input type="checkbox" value="improve"> Challenges</label>
+                        <label><input type="checkbox" value="improve"> Data Visualization</label>
+                        <label><input type="checkbox" value="improve"> Meet ups</label>
+                        <label><input type="checkbox" value="improve"> Open Source</label>
+                    </fieldset>
+                    <label for="suggestion">Any Suggestions?
+                        <textarea id="suggestion" placeholder="Enter your suggestions...." rows="3"
+                            cols="30"></textarea>
+                    </label>
+                    <input type="submit" id="submit" value="submit" />
+
+    </form>
+
+    <footer>
+        <p>If you have any questions about this survey, please feel free to contact aashishdhiman88@gmail.com</p>
+    </footer>
+</body>
+
+</html>
